@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eg.ahzam.activityanimation.SharedActivity">
+
+    <ImageView
+        android:id="@+id/shared_ivProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/ic_profile"
+        android:contentDescription="@string/profile_image"
+        android:transitionName="imageTransition"/>
+
+    <TextView
+        android:id="@+id/shared_tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shared_ivProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:transitionName="nameTransition"/>
+
+    <TextView
+        android:id="@+id/shared_tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/main_ivProfile"
+        android:layout_below="@id/shared_tvName"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/profile_description_extended"
+        android:textAlignment="center"
+        android:textColor="#4E4E4E"
+        android:textSize="14sp"
+        android:transitionName="descTransition"/>
+
+    <!--<ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shared_tvDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@drawable/follow_btn"
+        android:contentDescription="@string/follow_button"/>-->
+
+
+</RelativeLayout>

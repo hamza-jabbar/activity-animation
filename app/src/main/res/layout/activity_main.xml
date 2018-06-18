@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context="com.eg.ahzam.activityanimation.MainActivity">
+
+    <ImageView
+        android:id="@+id/main_ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:contentDescription="@string/ic_logo"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <!-- Card displaying the users profile -->
+    <RelativeLayout
+        android:id="@+id/main_relout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_ivLogo"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/card_main_bg"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:id="@+id/main_ivProfile"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:srcCompat="@drawable/ic_profile"
+            android:contentDescription="@string/profile_image"
+            android:transitionName="imageTransition"/>
+
+        <TextView
+            android:id="@+id/main_tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/main_ivProfile"
+            android:layout_toEndOf="@+id/main_ivProfile"
+            android:layout_marginStart="15dp"
+            android:text="@string/tv_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:transitionName="nameTransition" />
+
+        <TextView
+            android:id="@+id/main_tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/main_ivProfile"
+            android:layout_below="@id/shared_tvName"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/main_ivProfile"
+            android:text="@string/profile_description"
+            android:textColor="#4E4E4E"
+            android:textSize="12sp"
+            android:transitionName="descTransition" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_tvClickCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/main_relout"
+        android:text="@string/click_profile"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

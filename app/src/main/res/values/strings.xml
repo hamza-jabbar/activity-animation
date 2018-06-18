@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Activity Animation</string>
+    <string name="ic_logo">ic_logo</string>
+    <string name="tv_name">Sam Winchester</string>
+    <string name="profile_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</string>
+    <string name="click_profile">Click on the card to view full profile</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="profile_description_extended">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="follow_button">Follow Button</string>
+</resources>
